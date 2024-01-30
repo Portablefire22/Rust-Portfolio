@@ -7,26 +7,32 @@ The hope is to host this website :3
 
 ### Running
 
+Just your typical Rust application
+
 ```bash
-trunk serve
+cargo run
 ```
 
-Rebuilds the app whenever a change is detected and runs a local server to host it.
+Alternatively, the following command may be used to automatically rebuild upon file update:
 
-There's also the `trunk watch` command which does the same thing but without hosting it.
+```bash
+cargo watch -x run 
+```
+
+#### Command not found?
+
+```bash
+cargo install cargo-watch
+```
 
 ### Release
 
 ```bash
-trunk build --release
+cargo build --release
 ```
-
-This builds the app in release mode similar to `cargo build --release`.
-You can also pass the `--release` flag to `trunk serve` if you need to get every last drop of performance.
-
-Unless overwritten, the output will be located in the `dist` directory.
 
 ### License
 
 The following repository is bound by the [Apache 2.0](https://github.com/Portablefire22/Rust-Portfolio/blob/main/LICENSE-APACHE) license.
+
 

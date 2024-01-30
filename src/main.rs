@@ -1,7 +1,12 @@
-mod app;
+#[macro_use]
+extern crate rocket;
 
-use app::Main;
+#[get("/")]
+fn index() -> &'static str {
+    "Hello, world!"
+}
 
-fn main() {
-    yew::Renderer::<Main>::new().render();
+#[launch]
+fn rocket() -> _ {
+    rocket::build().mount("/", routes![index])
 }
