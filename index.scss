@@ -8,14 +8,13 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
-
-  background: linear-gradient(to bottom right, #444444, #009a5b);
+  
+  background: #1e1e2e;
   font-size: 1.5rem;
 }
 
 main {
-  color: #fff6d5;
-  font-family: sans-serif;
+  color: #cdd6f4;
   text-align: center;
 }
 
@@ -32,4 +31,30 @@ main {
 h1 + .subtitle {
   display: block;
   margin-top: -1em;
+}
+
+a { 
+  color: #89b4fa; 
+}
+
+* {
+  color: #cdd6f4;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+indexContainer h1{
+  font-weight: bold;
+  line-height: 0em;
+}
+
+indexContainer p {
+  color: #bac2de;
+}
+
+html {
+  --mdc-theme-background: #1e1e2e;
+  --mdc-theme-primary: #313244;
+  --mdc-theme-secondary: #6c7086;
+  --mdc-theme-on-primary: #cdd6f4;
+  --mdc-theme-on-secondary: #bac2de;
 }
