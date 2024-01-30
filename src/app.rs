@@ -35,16 +35,21 @@ pub fn app() -> Html {
 
 #[function_component(Index)]
 fn index() -> Html {
+    let navigator = use_navigator().unwrap();
     html! {
         <indexContainer>
             <h1>{"KittyGoesMeow"}</h1>
             <p>{"Professional Silliness :3"}</p>
-            <span onclick={Callback::from(|_| ())}>
+            <span onclick={Callback::from(move |_| navigator.push(&Route::Projects))}>
                 <MatButton label="Enter Hell" icon={AttrValue::from("arrow_forward")}
                     trailing_icon=true raised=true/>
             </span>
         </indexContainer>
     }
+}
+
+fn test() {
+    println!("fuck");
 }
 
 /* Colour scheme
