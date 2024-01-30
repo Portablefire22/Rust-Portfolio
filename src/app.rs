@@ -48,10 +48,6 @@ fn index() -> Html {
     }
 }
 
-fn test() {
-    println!("fuck");
-}
-
 /* Colour scheme
  * Catppuccin Mocha
  *

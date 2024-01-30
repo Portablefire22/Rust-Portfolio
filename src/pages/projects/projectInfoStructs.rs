@@ -10,6 +10,7 @@ pub struct Project {
     pub title: String,
     pub year: u16,
     pub isComplete: bool,
+    pub language: Vec<String>,
     pub desc: String,
     pub url: String,
 }
@@ -21,6 +22,7 @@ pub fn getProjects() -> Vec<Project> {
             title: "KittyGoesMeow".to_string(),
             year: 2024,
             isComplete: false,
+            language: vec!["Rust".to_string()],
             desc: "Portfolio website so I can show off and increase my ego >:3.".to_string(),
             url: "PLACEHOLDER".to_string(),
         },
@@ -29,6 +31,7 @@ pub fn getProjects() -> Vec<Project> {
             title: "Vulkan Voxel Engine".to_string(),
             year: 2023,
             isComplete: false,
+            language: vec!["C++".to_string()],
             desc: "Vulkan Voxel Engine, VVE, is an attempt to create a voxel engine using
                 Vulkan and C++."
                 .to_string(),
@@ -39,6 +42,7 @@ pub fn getProjects() -> Vec<Project> {
             title: "League of Legends Stat Website".to_string(),
             year: 2023,
             isComplete: false,
+            language: vec!["Rust".to_string()],
             desc: "Website created using Rust & Rocket.rs that tracks stats for matches of
                  the game 'League of Legends'."
                 .to_string(),
@@ -49,6 +53,7 @@ pub fn getProjects() -> Vec<Project> {
             title: "Computer Craft Web Server Project".to_string(),
             year: 2023,
             isComplete: false,
+            language: vec!["Lua".to_string(), "Javascript".to_string()],
             desc: "An unholy combination of the Minecraft mod 'ComputerCraft' and a Node.JS 
                 web server to provide 3D mapping of tunnels that were mined by automated 
                 turtles, with further expansion to provide a mass storage system using only 

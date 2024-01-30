@@ -15,6 +15,15 @@ pub fn projects_overview() -> Html {
                     project.title,
                     project.year)}
                 <br/>
+                {
+                    project.language.clone()
+                    .into_iter()
+                        .map(|lang| {
+                            html!{
+                                <small>{format!("{} ", lang)}</small>
+                            }
+                        }).collect::<Html>()
+                }
                 </p>
             }
         })
