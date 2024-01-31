@@ -1,0 +1,16 @@
+{% extends "template" %}
+
+{% block body %}
+<div class="index-container">
+  <h1>Cookie Usage</h1> <br/>
+  <p>This website makes use of cookies!</p>
+  <h2>Why?</h2>
+  <p>Remember that entry page on the index, you don't want to go through that everytime right? <br/>
+  If your answer was yes then you're in luck because that cookie is used to automatically skip it! <br/>
+  If not then I hope you declined the cookie on the first time that you left the index page, and then I hope 
+  keep declining it because no cookies means no remembering that you clicked no! :3
+  </p>
+</div>
+
+{% endblock body %}
+

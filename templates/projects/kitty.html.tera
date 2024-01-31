@@ -1,0 +1,26 @@
+{% extends "template" %}
+
+{% block body %}
+
+<div class="project-container">
+  <div class="image-gallery">
+    <img src="/public/kbitty.png"/>
+  </div>
+  <div class="project-meta">
+    <span class="project-lang">
+      Languages: PLACEHOLDER LANGUAGES
+    </span>
+    <span>
+      TEMP
+    </span>
+  </div>
+  <div>
+    <h1>KittyGoesMeow</h1>
+  </div>
+  <div>
+    <p>THIS IS PLACEHOLDER TEXT!</p>
+  </div>
+</div>
+
+{% endblock body %}
+

@@ -1,0 +1,11 @@
+{% extends "template" %}
+
+{% block body %}
+<div class="index-container">
+  <h1>KittyGoesMeow</h1> <br/>
+  <p>Professional Silliness :3</p>
+  <button onclick="location.href='./projects/';">ENTER HELL →</button>
+</div>
+
+{% endblock body %}
+

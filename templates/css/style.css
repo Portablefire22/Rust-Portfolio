@@ -1,0 +1,140 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background: var(--cat-theme-background);
+  font-size: 1.5rem;
+}
+
+main {
+  color: var(--cat-text);
+  text-align: center;
+}
+
+a { 
+  color: var(--cat-theme-link); 
+}
+
+* {
+  color: #cdd6f4;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+html { /* Catppuccin - Mocha */
+  
+  --cat-rosewater: #f5e0dc;
+  --cat-flamingo: #f2cdcd;
+  --cat-pink: #f5c2e7;
+  --cat-mauve: #cba6f7;
+  --cat-red: #f38ba8;
+  --cat-maroon: #eba0ac;
+  --cat-peach: #fab387;
+  --cat-yellow: #f9e2af;
+  --cat-green: #a6e3a1;
+  --cat-teal: #94e2d5;
+  --cat-sky: #89dceb;
+  --cat-sapphire: #74c7ec;
+  --cat-blue: #69b4fa;
+  --cat-lavender: #b4befe;
+  --cat-text: #cdd6f4;
+  --cat-subtext1: #bac2de;
+  --cat-subtext0: #a6adc8;
+  --cat-overlay2: #9399b2;
+  --cat-overlay1: #7f849c;
+  --cat-overlay0: #6c7086;
+  --cat-surface2: #585b70;
+  --cat-surface1: #45475a;
+  --cat-surface0: #313244;
+  --cat-base: #1e1e2e;
+  --cat-mantle: #181825;
+  --cat-crust: #11111b;
+
+  /* More specific things like links and shit */
+  --cat-theme-background: var(--cat-base);
+  --cat-theme-link: var(--cat-blue);
+  --cat-theme-success: var(--cat-green);
+  --cat-theme-warning: var(--cat-yellow);
+  --cat-theme-error: var(--cat-red);
+  --cat-theme-tag: var(--cat-blue);
+
+}
+
+
+.index-container {
+  line-height: 0; /* I want it to be as close together as possible */
+}
+
+.index-container button {
+  background-color: var(--cat-surface0);
+  border: none;
+  border-radius: 4px;
+  font-size: 0.7em;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  width: 150px;
+  padding: 4px 10px 4px 10px;
+  transition: background-color 1s;
+}
+
+.index-container button:hover {
+  background-color: var(--cat-surface1);
+}
+
+.project-container {
+  width: 85%;
+  height: 85%;
+  margin-top: 3em;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1;
+  position: relative;
+}
+
+.project-meta {
+  background-color: var(--cat-surface1);
+  width: 85%;
+  left: 7.5%;
+  height: 2em;
+  position: absolute;
+  top: 40%;
+  border-radius: 0 0 4px 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.project-lang {
+  flex-grow: 1;
+  border-style: none solid none none;
+  border-color: var(--cat-surface2);
+  margin-right: 1%;
+}
+
+.image-gallery {
+  background-color: var(--cat-surface0);
+  width: 100%;
+  height: 40%;
+  top: 0;
+  left: 0;
+  display:flex;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.image-gallery img{
+  width: 101%;
+  height: 101%;
+  position: absolute;
+  top: -0.5%;
+  left: -0.5%;
+  object-fit: cover;
+}
